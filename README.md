@@ -79,7 +79,8 @@ You can follow the below steps to run the ecommerce application in your system's
     npm run dev
     ```
 
-7. Voila! the ecommerce application is ready for use. You can run it at [http://127.0.0.1:3001/](http://127.0.0.1:3001/) (*Note:* The port might differ depending on the running application on your system).
+7. Voila! the ecommerce application is ready for use. You can run it at [http://127.0.0.1:3001/](http://127.0.0.1:3001/).  
+(*Note:* The port might differ depending on the running application on your system).
 
 
 ***Note:*** The products displayed in the web application are just for reference and do not correspond to any real products.
