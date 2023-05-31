@@ -1,38 +1,89 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# E-Commerce Application - Seller Dashboard 
 
-## Getting Started
+It is an E-commerce web application created using ReactJS which can be used to browse, explore, and buy various types of products.
 
-First, run the development server:
+This repository contains the source code of the main application (to be accessed by the users).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+The source code for the seller dashboard of the application is present [here](https://github.com/muskanmi/E-Commerce-Admin).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Features:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- Users can browse over a wide variety of products listed on the platform.
+- Users also get an option to view the products belonging to a specific category or product line.
+- Users can see various details of the products like their description, images, prices, etc.
+- Ability to add multiple products to the cart.
+- Users can place a purchase order for one or more products by checking out payment using Stripe payment gateway.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Tools & Technology Used:
 
-## Learn More
+- React.js
+- Next.js
+- Tailwind CSS
+- HTML
+- CSS
+- Javascript
+- MongoDB
+- Google Auth
+- Stripe Payments
+- Web APIs
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Prerequisites:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+* React.js Version: **18.2.0**
+* Next.js Version: **13.3.0**
+* NPM Version: **9.6.2**
+* You also need to have Mongo database setup using Mongo Atlas.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Instructions:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Before proceeding with the steps for running this application, you might first need to start & access the seller dashboard application for adding few products by following the instructions present in the [seller application repo](https://github.com/muskanmi/E-Commerce-Admin).
+
+You can follow the below steps to run the ecommerce application in your system's local environment:
+
+1. Get the source code on your pc via git.
+
+    ```shell
+    git clone https://github.com/muskanmi/E-Commerce
+    ```
+
+2.  Now, navigate inside the folder through your terminal.
+
+    ```shell
+    cd E-Commerce
+    ```
+
+3. Next, you need to create a configuration file named as `.env` at the root of the folder (where package.json file is present).
+
+4. Then, enter the following statements after adding the values of appropriate configurations like *MongoDB URI*, *Stripe Payment Gateway API keys* in this newly created `.env` file:
+
+    ```js
+        MONGODB_URI = ""
+        STRIPE_PK = ""
+        STRIPE_SK = ""
+        PUBLIC_URL = ""
+    ```
+
+5. Next, install the required dependencies by running the following command:
+
+    ```shell
+    npm install
+    ```
+
+6. Finally, start the application by running:
+
+    ```shell
+    npm run dev
+    ```
+
+7. Voila! the ecommerce application is ready for use. You can run it at [http://127.0.0.1:3001/](http://127.0.0.1:3001/) (*Note:* The port might differ depending on the running application on your system).
+
+
+***Note:*** The products displayed in the web application are just for reference and do not correspond to any real products.
+
+
+#### :small_blue_diamond: Please do give a ⭐️ if you find this project useful.
+
